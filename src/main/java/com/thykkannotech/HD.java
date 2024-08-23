@@ -17,8 +17,21 @@ public class HD {
         System.out.println("Capacidade do HD: " + capacidade + " GB");
     }
 
-    // Getters e Setters
+    // Método hipotético de cadastrar
+    public void cadastrar() {
+        // Lógica de cadastro do HD
+        System.out.println("HD cadastrado com sucesso.");
+    }
 
+    // Método hipotético de entrada de dados
+    public void entrada(String tipo, String marca, int capacidade) {
+        this.tipo = tipo;
+        this.marca = marca;
+        this.capacidade = capacidade;
+        System.out.println("Dados do HD inseridos com sucesso.");
+    }
+
+    // Getters e Setters
     public String getTipo() {
         return tipo;
     }

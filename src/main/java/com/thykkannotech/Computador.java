@@ -91,18 +91,41 @@ public abstract class Computador {
 
         scanner.nextLine(); // Consumir a quebra de linha
 
-        // Aqui vamos supor que temos métodos para cadastrar Memoria, HD e Fonte
+        // Cadastrar Memória
         System.out.println("Cadastrar Memória:");
-        this.memoria = new Memoria();
-        this.memoria.cadastrar(); // Método hipotético em Memoria
+        System.out.print("Digite o tipo de memória: ");
+        String tipoMemoria = scanner.nextLine();
+        System.out.print("Digite a marca da memória: ");
+        String marcaMemoria = scanner.nextLine();
+        System.out.print("Digite a capacidade da memória (GB): ");
+        int capacidadeMemoria = scanner.nextInt();
+        scanner.nextLine(); // Consumir a quebra de linha
+        this.memoria = new Memoria(tipoMemoria, marcaMemoria, capacidadeMemoria);
+        this.memoria.cadastrar(); // Método ajustado em Memoria
 
+        // Cadastrar HD
         System.out.println("Cadastrar HD:");
-        this.hd = new HD();
-        this.hd.cadastrar(); // Método hipotético em HD
+        System.out.print("Digite o tipo de HD: ");
+        String tipoHD = scanner.nextLine();
+        System.out.print("Digite a marca do HD: ");
+        String marcaHD = scanner.nextLine();
+        System.out.print("Digite a capacidade do HD (GB): ");
+        int capacidadeHD = scanner.nextInt();
+        scanner.nextLine(); // Consumir a quebra de linha
+        this.hd = new HD(tipoHD, marcaHD, capacidadeHD);
+        this.hd.cadastrar(); // Método ajustado em HD
 
+        // Cadastrar Fonte
         System.out.println("Cadastrar Fonte:");
-        this.fonte = new Fonte();
-        this.fonte.cadastrar(); // Método hipotético em Fonte
+        System.out.print("Digite o tipo de fonte: ");
+        String tipoFonte = scanner.nextLine();
+        System.out.print("Digite a marca da fonte: ");
+        String marcaFonte = scanner.nextLine();
+        System.out.print("Digite a potência da fonte (W): ");
+        int potenciaFonte = scanner.nextInt();
+        scanner.nextLine(); // Consumir a quebra de linha
+        this.fonte = new Fonte(tipoFonte, marcaFonte, potenciaFonte);
+        this.fonte.cadastrar(); // Método ajustado em Fonte
     }
 
     public void entrada() {
@@ -119,21 +142,40 @@ public abstract class Computador {
 
         scanner.nextLine(); // Consumir a quebra de linha
 
-        // Solicitar entrada de dados para Memoria, HD e Fonte
+        // Entrada de dados para Memória
         System.out.println("Entrada de dados para Memória:");
-        this.memoria = new Memoria();
-        this.memoria.entrada(); // Método hipotético em Memoria
+        System.out.print("Digite o tipo de memória: ");
+        String tipoMemoria = scanner.nextLine();
+        System.out.print("Digite a marca da memória: ");
+        String marcaMemoria = scanner.nextLine();
+        System.out.print("Digite a capacidade da memória (GB): ");
+        int capacidadeMemoria = scanner.nextInt();
+        scanner.nextLine(); // Consumir a quebra de linha
+        this.memoria = new Memoria(tipoMemoria, marcaMemoria, capacidadeMemoria);
+        this.memoria.entrada(tipoMemoria, marcaMemoria, capacidadeMemoria);
 
+        // Entrada de dados para HD
         System.out.println("Entrada de dados para HD:");
-        this.hd = new HD();
-        this.hd.entrada(); // Método hipotético em HD
+        System.out.print("Digite o tipo de HD: ");
+        String tipoHD = scanner.nextLine();
+        System.out.print("Digite a marca do HD: ");
+        String marcaHD = scanner.nextLine();
+        System.out.print("Digite a capacidade do HD (GB): ");
+        int capacidadeHD = scanner.nextInt();
+        scanner.nextLine(); // Consumir a quebra de linha
+        this.hd = new HD(tipoHD, marcaHD, capacidadeHD);
+        this.hd.entrada(tipoHD, marcaHD, capacidadeHD);
 
+        // Entrada de dados para Fonte
         System.out.println("Entrada de dados para Fonte:");
-        this.fonte = new Fonte();
-        this.fonte.entrada(); // Método hipotético em Fonte
+        System.out.print("Digite o tipo de fonte: ");
+        String tipoFonte = scanner.nextLine();
+        System.out.print("Digite a marca da fonte: ");
+        String marcaFonte = scanner.nextLine();
+        System.out.print("Digite a potência da fonte (W): ");
+        int potenciaFonte = scanner.nextInt();
+        scanner.nextLine(); // Consumir a quebra de linha
+        this.fonte = new Fonte(tipoFonte, marcaFonte, potenciaFonte);
+        this.fonte.entrada(tipoFonte, marcaFonte, potenciaFonte);
     }
-}
-package com.thykkannotech;
-
-public class Computador {
 }

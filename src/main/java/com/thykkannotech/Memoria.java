@@ -17,8 +17,21 @@ public class Memoria {
         System.out.println("Capacidade da Memória: " + capacidade + " GB");
     }
 
-    // Getters e Setters
+    // Método hipotético de cadastrar, que você pode ajustar conforme necessário
+    public void cadastrar() {
+        // Lógica de cadastro da memória
+        System.out.println("Memória cadastrada com sucesso.");
+    }
 
+    // Método hipotético de entrada de dados
+    public void entrada(String tipo, String marca, int capacidade) {
+        this.tipo = tipo;
+        this.marca = marca;
+        this.capacidade = capacidade;
+        System.out.println("Dados da memória inseridos com sucesso.");
+    }
+
+    // Getters e Setters
     public String getTipo() {
         return tipo;
     }
