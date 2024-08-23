@@ -7,26 +7,27 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         // Criar 3 objetos de cada tipo: Desktop, Notebook, e Servidor
+
         Desktop[] desktops = new Desktop[3];
         Notebook[] notebooks = new Notebook[3];
         Servidor[] servidores = new Servidor[3];
 
         // Coletar dados para os objetos Desktop
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 3; i++) {
             System.out.println("Cadastro do Desktop " + (i + 1));
             desktops[i] = new Desktop();
             desktops[i].entrada();
         }
 
         // Coletar dados para os objetos Notebook
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 3; i++) {
             System.out.println("Cadastro do Notebook " + (i + 1));
             notebooks[i] = new Notebook();
             notebooks[i].entrada();
         }
 
         // Coletar dados para os objetos Servidor
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < 3; i++) {
             System.out.println("Cadastro do Servidor " + (i + 1));
             servidores[i] = new Servidor();
             servidores[i].entrada();
