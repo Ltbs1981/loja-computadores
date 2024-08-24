@@ -6,6 +6,9 @@ public class Desktop extends Computador {
     private int placasVideo;
     private String marcaPlacaVideo;
 
+    public Desktop(String marca, double preco, int quantidade, Memoria memoria, HD hd, Fonte fonte) {
+        super(marca, preco, quantidade, memoria, hd, fonte);
+    }
     public int getPlacasVideo() {
         return placasVideo;
     }

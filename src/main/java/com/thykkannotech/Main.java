@@ -7,7 +7,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Loja de computadores!");
 
-        // Criar 3 objetos de cada tipo: Desktop, Notebook, e Servidor
+        // extendendo as sub classes Desktop, Notebook e Servidor
 
         Desktop[] desktops = new Desktop[3];
         Notebook[] notebooks = new Notebook[3];

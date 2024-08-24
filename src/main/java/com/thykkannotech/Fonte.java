@@ -17,13 +17,13 @@ public class Fonte {
         System.out.println("Potência da Fonte: " + potencia + " W");
     }
 
-    // Método hipotético de cadastrar
+
     public void cadastrar() {
         // Lógica de cadastro da Fonte
         System.out.println("Fonte cadastrada com sucesso.");
     }
 
-    // Método hipotético de entrada de dados
+
     public void entrada(String tipo, String marca, int potencia) {
         this.tipo = tipo;
         this.marca = marca;

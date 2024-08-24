@@ -7,6 +7,9 @@ public class Notebook extends Computador {
     private String marcaMonitor;
     private int resolucaoMonitor;
 
+    public Notebook(String marca, double preco, int quantidade, Memoria memoria, HD hd, Fonte fonte) {
+        super(marca, preco, quantidade, memoria, hd, fonte);
+    }
     public String getTipoMonitor() {
         return tipoMonitor;
     }

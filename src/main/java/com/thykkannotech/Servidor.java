@@ -7,6 +7,9 @@ public class Servidor extends Computador {
     private String tipoGabinete;
     private String marcaGabinete;
 
+    public Servidor(String marca, double preco, int quantidade, Memoria memoria, HD hd, Fonte fonte) {
+        super(marca, preco, quantidade, memoria, hd, fonte);
+    }
     public int getNumeroHDs() {
         return numeroHDs;
     }

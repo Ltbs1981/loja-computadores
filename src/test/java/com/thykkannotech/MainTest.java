@@ -34,7 +34,7 @@ public class MainTest {
         assertEquals("HP", desktop.getMarca());
         assertEquals(3000.0, desktop.getPreco(), 0.001);
         assertEquals(10, desktop.getQuantidade());
-        // Outras asserções para os componentes, se necessário
+
     }
 
     @Test
@@ -63,7 +63,7 @@ public class MainTest {
         assertEquals("IBM", servidor.getMarca());
         assertEquals(15000.0, servidor.getPreco(), 0.001);
         assertEquals(2, servidor.getQuantidade());
-        // Outras asserções para os componentes, se necessário
+
     }
 
     @Test
