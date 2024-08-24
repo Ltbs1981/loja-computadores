@@ -7,6 +7,17 @@ public class Servidor extends Computador {
     private String tipoGabinete;
     private String marcaGabinete;
 
+    public int getNumeroHDs() {
+        return numeroHDs;
+    }
+
+    public String getTipoGabinete() {
+        return tipoGabinete;
+    }
+
+    public String getMarcaGabinete() {
+        return marcaGabinete;
+    }
     public Servidor() {
         super("", 0.0, 0, null, null, null);
         this.numeroHDs = 0;

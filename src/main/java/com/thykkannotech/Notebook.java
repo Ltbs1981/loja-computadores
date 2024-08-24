@@ -7,6 +7,17 @@ public class Notebook extends Computador {
     private String marcaMonitor;
     private int resolucaoMonitor;
 
+    public String getTipoMonitor() {
+        return tipoMonitor;
+    }
+
+    public String getMarcaMonitor() {
+        return marcaMonitor;
+    }
+
+    public int getResolucaoMonitor() {
+        return resolucaoMonitor;
+    }
     public Notebook() {
         super("", 0.0, 0, null, null, null);
         this.tipoMonitor = "";

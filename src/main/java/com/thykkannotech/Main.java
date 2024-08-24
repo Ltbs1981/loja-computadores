@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        System.out.println("Loja de computadores!");
 
         // Criar 3 objetos de cada tipo: Desktop, Notebook, e Servidor
 

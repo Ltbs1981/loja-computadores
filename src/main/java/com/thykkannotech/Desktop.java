@@ -6,6 +6,14 @@ public class Desktop extends Computador {
     private int placasVideo;
     private String marcaPlacaVideo;
 
+    public int getPlacasVideo() {
+        return placasVideo;
+    }
+
+    public String getMarcaPlacaVideo() {
+        return marcaPlacaVideo;
+    }
+
     public Desktop() {
         super("", 0.0, 0, null, null, null);
         this.placasVideo = 0;
